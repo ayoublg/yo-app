@@ -1,0 +1,9 @@
+<div>movies list template
+
+<ul>
+	<li ng-repeat="movie in $ctrl.movies" >
+    <a ng-click="$ctrl.showDetails(movie)">{{movie.title}}</a>
+	</li>
+</ul>
+<movie-details ng-show="$ctrl.selectedMovie" movie="$ctrl.selectedMovie"></movie-details>
+</div>
